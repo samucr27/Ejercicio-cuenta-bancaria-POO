@@ -21,13 +21,12 @@ public class Main {
 
         while (estado) {
             System.out.println("""
-                    ---------------------------
                     1. Crear un cliente
                     2. Mostrar todas las cuentas
                     3. Mostrar información de una cuenta específica
                     4. Operaciones (Depositar/Retirar)
                     5. Salir
-                    ---------------------------""");
+                    """);
 
             op = teclado.nextInt();
 
@@ -123,19 +122,19 @@ public class Main {
             }
         }
 
-        teclado.close(); // Cerrar scanner
+        teclado.close();
     }
 
     public static void mostrarSubMenu(Scanner teclado, cuenta_bancaria cuenta) {
         boolean subMenuActivo = true;
         while (subMenuActivo) {
             System.out.println("""
-                    --- Operaciones ---
+                       Operaciones 
                     1. Depositar dinero
                     2. Retirar dinero
                     3. Mostrar información de la cuenta
                     4. Volver al menú principal
-                    -------------------""");
+                    """);
             int subOp = teclado.nextInt();
             double monto;
 
